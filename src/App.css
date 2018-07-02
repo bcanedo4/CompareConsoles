@@ -1,2 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
 .container {
-  font-size: 2rem; }
+  display: grid;
+  padding: 4rem 4rem;
+  grid-template-rows: 40vh 10vh 40vh;
+  grid-template-columns: [panel-top-start] 28vw [panel-bottom-start] 34vw [panel-top-end] 28vw [panel-bottom-end]; }
+  .container__playstation {
+    background-color: #0E71CD;
+    grid-column: panel-top-start / panel-top-end;
+    grid-row: 1 / span 2;
+    z-index: 2; }
+  .container__xbox {
+    background-color: #107c10;
+    grid-column: panel-bottom-start / panel-bottom-end;
+    grid-row: 2 / span 2; }
