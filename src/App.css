@@ -56,10 +56,13 @@ html {
         grid-row: 2 / span 1; } }
 
 .play__img {
-  background-color: #ccc;
   grid-column: play-img-start / play-img-end;
   grid-row: 1 / -1;
-  z-index: 3; }
+  z-index: 3;
+  background-image: url(img/ps4.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .play__title {
   font-family: 'Open Sans', sans-serif;
@@ -89,6 +92,9 @@ html {
       grid-row: 2 / span 2; } }
 
 .xbox__img {
-  background-color: #000;
   grid-column: xbox-img-start / xbox-img-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  background-image: url(img/xbox.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; }

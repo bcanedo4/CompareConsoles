@@ -1,10 +1,13 @@
 .play {
     &__img {
-        background-color: #ccc;
         grid-column: play-img-start / play-img-end;
         grid-row: 1 / -1;
         z-index: 3;
-        
+
+        background-image: url(img/ps4.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     &__title {
@@ -43,9 +46,13 @@
 
 .xbox {
     &__img {
-        background-color: #000;
         grid-column: xbox-img-start / xbox-img-end;
         grid-row: 1 / -1;
+
+        background-image: url(img/xbox.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     &__title {
