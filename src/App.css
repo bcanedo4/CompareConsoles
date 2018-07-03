@@ -14,10 +14,10 @@ html {
   padding: 4rem 4rem;
   grid-template-rows: 40vh 10vh 40vh;
   grid-template-columns: [panel-top-start] 28vw [panel-bottom-start] 34vw [panel-top-end] 28vw [panel-bottom-end]; }
-  @media only screen and (max-height: 40.625em) {
-    .container {
-      grid-template-rows: 30vh 7.5vh 30vh; } }
   @media only screen and (max-width: 56.25em) {
+    .container {
+      grid-template-rows: 45vh 45vh; } }
+  @media only screen and (max-height: 40.625em) {
     .container {
       grid-template-rows: 45vh 45vh; } }
   .container__playstation {
@@ -34,6 +34,10 @@ html {
       .container__playstation {
         grid-column: panel-top-start / -1;
         grid-row: 1 / span 1; } }
+    @media only screen and (max-height: 40.625em) {
+      .container__playstation {
+        grid-column: panel-top-start / -1;
+        grid-row: 1 / span 1; } }
   .container__xbox {
     background-color: #107c10;
     grid-column: panel-bottom-start / panel-bottom-end;
@@ -43,6 +47,10 @@ html {
     grid-template-rows: 10vh 10vh 1fr;
     grid-template-columns: [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 28% [play-adv-end play-dis-start] 28% [play-dis-end]; }
     @media only screen and (max-width: 56.25em) {
+      .container__xbox {
+        grid-column: panel-top-start / -1;
+        grid-row: 2 / span 1; } }
+    @media only screen and (max-height: 40.625em) {
       .container__xbox {
         grid-column: panel-top-start / -1;
         grid-row: 2 / span 1; } }
