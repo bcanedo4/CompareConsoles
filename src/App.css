@@ -17,19 +17,23 @@ html {
   @media only screen and (max-width: 56.25em) {
     .container {
       grid-template-rows: 45vh 45vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      padding: 0; } }
   @media only screen and (max-height: 40.625em) {
     .container {
       grid-template-rows: 45vh 45vh; } }
   .container__playstation {
     background-color: #0E71CD;
+    color: #fff;
     grid-column: panel-top-start / panel-top-end;
     grid-row: 1 / span 2;
     z-index: 2;
     display: grid;
     padding: 3rem 3rem;
-    grid-template-rows: 10vh 10vh 1fr;
+    grid-template-rows: 10vh 8vh min-content;
     grid-template-columns: [play-img-start] 34% [play-img-end play-adv-start] 30% [play-adv-end play-dis-start] 30% [play-dis-end];
-    grid-column-gap: 2%; }
+    grid-column-gap: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
       .container__playstation {
         grid-column: panel-top-start / -1;
@@ -38,14 +42,18 @@ html {
       .container__playstation {
         grid-column: panel-top-start / -1;
         grid-row: 1 / span 1; } }
+    @media only screen and (max-width: 37.5em) {
+      .container__playstation {
+        grid-row-gap: 2rem; } }
   .container__xbox {
     background-color: #107c10;
     grid-column: panel-bottom-start / panel-bottom-end;
     grid-row: 2 / span 2;
     display: grid;
     padding: 3rem 3rem;
-    grid-template-rows: 10vh 10vh 1fr;
-    grid-template-columns: [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 28% [play-adv-end play-dis-start] 28% [play-dis-end]; }
+    grid-template-rows: 10vh 10vh min-content;
+    grid-template-columns: [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 28% [play-adv-end play-dis-start] 28% [play-dis-end];
+    grid-column-gap: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
       .container__xbox {
         grid-column: panel-top-start / -1;
@@ -54,6 +62,9 @@ html {
       .container__xbox {
         grid-column: panel-top-start / -1;
         grid-row: 2 / span 1; } }
+    @media only screen and (max-width: 37.5em) {
+      .container__xbox {
+        grid-row-gap: 2rem; } }
 
 .play__img {
   grid-column: play-img-start / play-img-end;
@@ -63,33 +74,39 @@ html {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 37.5em) {
+    .play__img {
+      grid-column: play-img-start / -1;
+      grid-row: 1 / span 1;
+      background-position: top; } }
 
 .play__title {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
-  background-color: yellow;
+  font-size: 4.5rem;
   grid-column: 2 / -1;
   grid-row: 2 / span 1;
   z-index: 3; }
+  @media only screen and (max-width: 37.5em) {
+    .play__title {
+      grid-column: 1 / -1; } }
   @media only screen and (max-height: 40.625em) {
     .play__title {
       grid-row: 1 / span 1; } }
 
 .play__adv {
-  background-color: orangered;
-  grid-column: play-adv-start / play-adv-end;
-  grid-row: 3 / -1; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  grid-column: play-adv-start / -1;
+  grid-row: 3 / -1;
+  text-align: center; }
   @media only screen and (max-height: 40.625em) {
     .play__adv {
       grid-row: 2 / span 2; } }
-
-.play__dis {
-  background-color: maroon;
-  grid-column: play-dis-start / play-dis-end;
-  grid-row: 3 / -1; }
-  @media only screen and (max-height: 40.625em) {
-    .play__dis {
-      grid-row: 2 / span 2; } }
+  .play__adv--item {
+    margin-top: .4rem;
+    font-size: 1.8rem;
+    list-style: none;
+    text-align: left; }
 
 .xbox__img {
   grid-column: xbox-img-start / xbox-img-end;
@@ -98,3 +115,36 @@ html {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 37.5em) {
+    .xbox__img {
+      grid-column: xbox-img-start / -1;
+      grid-row: 1 / span 1;
+      background-position: top; } }
+
+.xbox__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4.5rem;
+  grid-column: 2 / -1;
+  grid-row: 2 / span 1;
+  z-index: 3; }
+  @media only screen and (max-width: 37.5em) {
+    .xbox__title {
+      grid-column: 1 / -1; } }
+  @media only screen and (max-height: 40.625em) {
+    .xbox__title {
+      grid-row: 1 / span 1; } }
+
+.xbox__adv {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  grid-column: xbox-adv-start / -1;
+  grid-row: 3 / -1;
+  text-align: center; }
+  @media only screen and (max-height: 40.625em) {
+    .xbox__adv {
+      grid-row: 2 / span 2; } }
+  .xbox__adv--item {
+    margin-top: .4rem;
+    font-size: 1.8rem;
+    list-style: none;
+    text-align: left; }
