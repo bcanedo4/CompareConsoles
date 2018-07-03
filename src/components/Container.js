@@ -5,7 +5,7 @@ import Xbox from './Xbox';
 class Container extends Component {
     render() {
         return (
-            <div class="container">
+            <div className="container">
                 <Playstation />
                 <Xbox />
             </div>

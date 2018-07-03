@@ -13,9 +13,9 @@ html {
 
 .container {
     display: grid;
-    padding: 4rem 4rem;
+    padding: 2rem 2rem;
     grid-template-rows: 40vh 10vh minmax(min-content, 40vh);
-    grid-template-columns:  [panel-top-start] 28vw [panel-bottom-start] 34vw [panel-top-end] 28vw [panel-bottom-end];
+    grid-template-columns:  [panel-top-start] 30vw [panel-bottom-start] 34vw [panel-top-end] 30vw [panel-bottom-end];
     
     @media only screen and (max-width: $bp-width-medium) {
         grid-template-rows: 45vh 45vh;
@@ -28,7 +28,7 @@ html {
     }
 
     @media only screen and (max-height: $bp-height-medium) {
-        grid-template-rows: 45vh 45vh;        
+        grid-template-rows: minmax(min-content, 45vh) min-max(min-content, 45vh);        
     }
 
     &__playstation {
@@ -49,10 +49,14 @@ html {
         }
 
         display: grid;
-        padding: 3rem 3rem;
-        grid-template-rows: 10vh 8vh min-content;
-        grid-template-columns:  [play-img-start] 34% [play-img-end play-adv-start] 30% [play-adv-end play-dis-start] 30% [play-dis-end];        
+        padding: 0 1.5rem;
+        grid-template-rows: 10vh 10vh min-content;
+        grid-template-columns:  [play-img-start] 34% [play-img-end play-adv-start] 30% [play-adv-end play-dis-start] minmax(min-content, 30%) [play-dis-end];        
         grid-column-gap: 1.5rem;
+
+        @media only screen and (max-width: $bp-width-medium) {
+            padding: 1.5rem 1.5rem;
+        }
 
         @media only screen and (max-width: $bp-width-small) {
             grid-row-gap: 2rem;
@@ -75,10 +79,14 @@ html {
         }
 
         display: grid;
-        padding: 3rem 3rem;
+        padding: 0 1.5rem;
         grid-template-rows: 10vh 10vh min-content;
-        grid-template-columns:  [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 30% [play-adv-end play-dis-start] 30% [play-dis-end]; 
+        grid-template-columns:  [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 30% [xbox-adv-end xbox-dis-start] minmax(min-content, 30%) [xbox-dis-end]; 
         grid-column-gap: 1.5rem;
+
+        @media only screen and (max-width: $bp-width-medium) {
+            padding: 1.5rem 1.5rem;
+        }
     
         @media only screen and (max-width: $bp-width-small) {
             grid-row-gap: 2rem;
