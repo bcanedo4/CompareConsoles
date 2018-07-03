@@ -14,7 +14,7 @@ html {
 .container {
     display: grid;
     padding: 4rem 4rem;
-    grid-template-rows: 40vh 10vh 40vh;
+    grid-template-rows: 40vh 10vh minmax(min-content, 40vh);
     grid-template-columns:  [panel-top-start] 28vw [panel-bottom-start] 34vw [panel-top-end] 28vw [panel-bottom-end];
     
     @media only screen and (max-width: $bp-width-medium) {
@@ -23,6 +23,8 @@ html {
 
     @media only screen and (max-width: $bp-width-small) {
         padding: 0;
+        grid-template-rows: minmax(min-content, 45vh) minmax(min-content, 45vh);
+        grid-template-columns:  [panel-top-start] 33vw [panel-bottom-start] 34vw [panel-top-end] 33vw [panel-bottom-end];
     }
 
     @media only screen and (max-height: $bp-height-medium) {

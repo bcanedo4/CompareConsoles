@@ -23,8 +23,13 @@
         grid-row: 2 / span 1;
         z-index: 3;
 
+        @media only screen and (max-width: $bp-width-medium) {
+            grid-row: 1 / span 1;
+        }
+
         @media only screen and (max-width: $bp-width-small) {
             grid-column: 1 / -1;
+            grid-row: 2 / span 1;
         }
 
         @media only screen and (max-height: $bp-height-medium) {
@@ -40,12 +45,22 @@
         grid-row: 3 / -1;
         text-align: center;
 
+        @media only screen and (max-width: $bp-width-medium) {
+            grid-row: 2 / -1;
+        }
+
+        @media only screen and (max-width: $bp-width-small) {
+            grid-column: 1 / -1;
+            grid-row: 3 / span 1;
+        }
+
         @media only screen and (max-height: $bp-height-medium) {
             grid-row: 2 / span 2;
         }
 
         &--item {
             margin-top: .4rem;
+            margin-left: 2rem;
             font-size: $font-adv;
             list-style: none;
             text-align: left;
@@ -77,8 +92,13 @@
         grid-row: 2 / span 1;
         z-index: 3;
 
+        @media only screen and (max-width: $bp-width-medium) {
+            grid-row: 1 / span 1;
+        }
+
         @media only screen and (max-width: $bp-width-small) {
             grid-column: 1 / -1;
+            grid-row: 2 / span 1;
         }
 
         @media only screen and (max-height: $bp-height-medium) {
@@ -94,12 +114,22 @@
         grid-row: 3 / -1;
         text-align: center;
 
+        @media only screen and (max-width: $bp-width-medium) {
+            grid-row: 2 / -1;
+        }
+
+        @media only screen and (max-width: $bp-width-small) {
+            grid-column: 1 / -1;
+            grid-row: 3 / span 1;
+        }
+
         @media only screen and (max-height: $bp-height-medium) {
             grid-row: 2 / span 2;
         }
 
         &--item {
             margin-top: .4rem;
+            margin-left: 2rem;
             font-size: $font-adv;
             list-style: none;
             text-align: left;

@@ -9,7 +9,7 @@ class Xbox extends Component {
                 <ul class="xbox__adv">
                     Advantages
                     <li class="xbox__adv--item">Xbox One X has a faster processor</li>
-                    <li class="xbox__adv--item">Xbox One X can pla yUltra HD Blu-ray discs</li>
+                    <li class="xbox__adv--item">Xbox One X can play Ultra HD Blu-ray discs</li>
                     <li class="xbox__adv--item">Supports cross platform gaming</li>
                     <li class="xbox__adv--item">Halo and Gears of War I guess?</li>
                 </ul>
