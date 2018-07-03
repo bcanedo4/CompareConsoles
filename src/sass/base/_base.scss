@@ -16,17 +16,47 @@ html {
     padding: 4rem 4rem;
     grid-template-rows: 40vh 10vh 40vh;
     grid-template-columns:  [panel-top-start] 28vw [panel-bottom-start] 34vw [panel-top-end] 28vw [panel-bottom-end];
+    
+    @media only screen and (max-height: $bp-height-medium) {
+        grid-template-rows: 30vh 7.5vh 30vh;
+    }
+
+    @media only screen and (max-width: $bp-width-medium) {
+        grid-template-rows: 45vh 45vh;
+    }
 
     &__playstation {
         background-color: $play-blue;
         grid-column: panel-top-start / panel-top-end;
         grid-row: 1 / span 2;
         z-index: 2;
+
+        @media only screen and (max-width: $bp-width-medium) {
+            grid-column: panel-top-start / -1;
+            grid-row: 1 / span 1;
+            
+        }
+
+        display: grid;
+        padding: 3rem 3rem;
+        grid-template-rows: 10vh 10vh 1fr;
+        grid-template-columns:  [play-img-start] 34% [play-img-end play-adv-start] 30% [play-adv-end play-dis-start] 30% [play-dis-end];        
+        grid-column-gap: 2%;
     }
 
     &__xbox {
         background-color: $xbox-green;
         grid-column: panel-bottom-start / panel-bottom-end;
         grid-row: 2 / span 2;
+
+        @media only screen and (max-width: $bp-width-medium) {
+            grid-column: panel-top-start / -1;
+            grid-row: 2 / span 1;
+        }
+
+        display: grid;
+        padding: 3rem 3rem;
+        grid-template-rows: 10vh 10vh 1fr;
+        grid-template-columns:  [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 28% [play-adv-end play-dis-start] 28% [play-dis-end]; 
     }
 }

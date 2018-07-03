@@ -4,7 +4,7 @@ class Xbox extends Component {
     render() {
         return (
             <div class="container__xbox">
-                Xbox
+                <div class="xbox__img"></div>
             </div>
         );
     }   

@@ -1,0 +1,67 @@
+.play {
+    &__img {
+        background-color: #ccc;
+        grid-column: play-img-start / play-img-end;
+        grid-row: 1 / -1;
+        z-index: 3;
+        
+    }
+
+    &__title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: $font-title;
+        background-color: yellow;
+        grid-column: 2 / -1;
+        grid-row: 2 / span 1;
+        z-index: 3;
+
+        @media only screen and (max-height: $bp-height-medium) {
+            grid-row: 1 / span 1;
+        }
+    }
+
+    &__adv {
+        background-color: orangered;
+        grid-column: play-adv-start / play-adv-end;
+        grid-row: 3 / -1;
+
+        @media only screen and (max-height: $bp-height-medium) {
+            grid-row: 2 / span 2;
+        }
+    }
+
+    &__dis {
+        background-color: maroon;
+        grid-column: play-dis-start / play-dis-end;
+        grid-row: 3 / -1;
+
+        @media only screen and (max-height: $bp-height-medium) {
+            grid-row: 2 / span 2;
+        }
+    }
+}
+
+.xbox {
+    &__img {
+        background-color: #000;
+        grid-column: xbox-img-start / xbox-img-end;
+        grid-row: 1 / -1;
+    }
+
+    &__title {
+        // font-family: 'Open Sans', sans-serif;
+        // font-size: $font-title;
+        // background-color: orange;
+        // grid-column: 2 / -1;
+        // grid-row: 2 / span 1;
+        // z-index: 3;
+    }
+
+    &__adv {
+
+    }
+
+    &__dis {
+        
+    }
+}
