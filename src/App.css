@@ -17,7 +17,7 @@ html {
   @media only screen and (max-width: 56.25em) {
     .container {
       grid-template-rows: 45vh 45vh; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .container {
       padding: 0;
       grid-template-rows: minmax(min-content, 45vh) minmax(min-content, 45vh);
@@ -44,7 +44,7 @@ html {
       .container__playstation {
         grid-column: panel-top-start / -1;
         grid-row: 1 / span 1; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 43.75em) {
       .container__playstation {
         grid-row-gap: 2rem; } }
   .container__xbox {
@@ -54,7 +54,7 @@ html {
     display: grid;
     padding: 3rem 3rem;
     grid-template-rows: 10vh 10vh min-content;
-    grid-template-columns: [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 28% [play-adv-end play-dis-start] 28% [play-dis-end];
+    grid-template-columns: [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 30% [play-adv-end play-dis-start] 30% [play-dis-end];
     grid-column-gap: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
       .container__xbox {
@@ -64,7 +64,7 @@ html {
       .container__xbox {
         grid-column: panel-top-start / -1;
         grid-row: 2 / span 1; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 43.75em) {
       .container__xbox {
         grid-row-gap: 2rem; } }
 
@@ -76,7 +76,7 @@ html {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .play__img {
       grid-column: play-img-start / -1;
       grid-row: 1 / span 1;
@@ -91,7 +91,7 @@ html {
   @media only screen and (max-width: 56.25em) {
     .play__title {
       grid-row: 1 / span 1; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .play__title {
       grid-column: 1 / -1;
       grid-row: 2 / span 1; } }
@@ -108,7 +108,7 @@ html {
   @media only screen and (max-width: 56.25em) {
     .play__adv {
       grid-row: 2 / -1; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .play__adv {
       grid-column: 1 / -1;
       grid-row: 3 / span 1; } }
@@ -129,7 +129,7 @@ html {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .xbox__img {
       grid-column: xbox-img-start / -1;
       grid-row: 1 / span 1;
@@ -144,7 +144,7 @@ html {
   @media only screen and (max-width: 56.25em) {
     .xbox__title {
       grid-row: 1 / span 1; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .xbox__title {
       grid-column: 1 / -1;
       grid-row: 2 / span 1; } }
@@ -161,7 +161,7 @@ html {
   @media only screen and (max-width: 56.25em) {
     .xbox__adv {
       grid-row: 2 / -1; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .xbox__adv {
       grid-column: 1 / -1;
       grid-row: 3 / span 1; } }

@@ -1,4 +1,5 @@
 {
+  "homepage": "http://bcanedo4.github.io/CompareConsoles",
   "name": "compare-consoles",
   "version": "0.1.0",
   "private": true,
@@ -12,9 +13,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "watch:sass": "node-sass src/sass/main.scss src/App.css -w"
+    "watch:sass": "node-sass src/sass/main.scss src/App.css -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.0"
   }
 }

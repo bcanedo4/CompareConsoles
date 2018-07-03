@@ -77,7 +77,7 @@ html {
         display: grid;
         padding: 3rem 3rem;
         grid-template-rows: 10vh 10vh min-content;
-        grid-template-columns:  [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 28% [play-adv-end play-dis-start] 28% [play-dis-end]; 
+        grid-template-columns:  [xbox-img-start] 34% [xbox-img-end xbox-adv-start] 30% [play-adv-end play-dis-start] 30% [play-dis-end]; 
         grid-column-gap: 1.5rem;
     
         @media only screen and (max-width: $bp-width-small) {
