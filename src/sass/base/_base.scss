@@ -31,12 +31,15 @@ html {
         grid-template-rows: minmax(min-content, 45vh) min-max(min-content, 45vh);        
     }
 
+
     &__playstation {
         background-color: $play-blue;
         color: $color-white;
         grid-column: panel-top-start / panel-top-end;
         grid-row: 1 / span 2;
         z-index: 2;
+        transition: all .2s;
+
 
         @media only screen and (max-width: $bp-width-medium) {
             grid-column: panel-top-start / -1;
@@ -61,12 +64,19 @@ html {
         @media only screen and (max-width: $bp-width-small) {
             grid-row-gap: 2rem;
         }
+
+        &:hover {
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
     }
 
     &__xbox {
         background-color: $xbox-green;
         grid-column: panel-bottom-start / panel-bottom-end;
         grid-row: 2 / span 2;
+        transition: all .2s;
 
         @media only screen and (max-width: $bp-width-medium) {
             grid-column: panel-top-start / -1;
@@ -90,6 +100,12 @@ html {
     
         @media only screen and (max-width: $bp-width-small) {
             grid-row-gap: 2rem;
+        }
+
+        &:hover {
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
         }
     }
 }

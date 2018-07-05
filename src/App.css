@@ -31,6 +31,7 @@ html {
     grid-column: panel-top-start / panel-top-end;
     grid-row: 1 / span 2;
     z-index: 2;
+    transition: all .2s;
     display: grid;
     padding: 0 1.5rem;
     grid-template-rows: 10vh 10vh min-content;
@@ -50,10 +51,15 @@ html {
     @media only screen and (max-width: 43.75em) {
       .container__playstation {
         grid-row-gap: 2rem; } }
+    .container__playstation:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
   .container__xbox {
     background-color: #107c10;
     grid-column: panel-bottom-start / panel-bottom-end;
     grid-row: 2 / span 2;
+    transition: all .2s;
     display: grid;
     padding: 0 1.5rem;
     grid-template-rows: 10vh 10vh min-content;
@@ -73,6 +79,10 @@ html {
     @media only screen and (max-width: 43.75em) {
       .container__xbox {
         grid-row-gap: 2rem; } }
+    .container__xbox:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
 
 .play__img {
   grid-column: play-img-start / play-img-end;
